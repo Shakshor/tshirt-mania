@@ -12,7 +12,7 @@ const Aunty = () => {
         <div>
             <h4>aunty</h4>
             <p>House: {house}</p>
-            <button onClick={handleHouseIncrease}>Aunty magic</button>
+            {house > 4 && <button onClick={handleHouseIncrease}>Aunty magic</button>}
         </div>
     );
 };
